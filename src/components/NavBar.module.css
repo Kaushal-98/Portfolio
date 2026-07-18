@@ -1,0 +1,131 @@
+.header {
+  position: fixed;
+  top: var(--space-4);
+  left: 0;
+  right: 0;
+  z-index: 90;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 var(--space-4);
+}
+
+.nav {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  padding: var(--space-2) var(--space-4);
+  border-radius: 999px;
+}
+
+.brand {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text-primary);
+  background: transparent;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 999px;
+}
+
+.brand:hover {
+  background: var(--bg-glass-hover);
+}
+
+.linkList {
+  list-style: none;
+  display: flex;
+  gap: var(--space-2);
+  margin: 0 auto 0 0;
+  padding: 0;
+}
+
+.navLink {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 14px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  transition: color 0.2s, background 0.2s;
+}
+
+.navLink:hover,
+.navLink:focus-visible {
+  color: var(--text-primary);
+  background: var(--bg-glass-hover);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.cmdButton {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-tertiary);
+  background: transparent;
+  border: 1px solid var(--border-hairline);
+  border-radius: 999px;
+  padding: 7px 12px;
+}
+
+.cmdButton:hover {
+  color: var(--text-primary);
+  border-color: var(--border-hairline-strong);
+}
+
+.menuButton {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-size: 16px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.menuButton:hover {
+  background: var(--bg-glass-hover);
+}
+
+.mobileMenu {
+  margin-top: var(--space-2);
+  width: 100%;
+  max-width: 900px;
+  border-radius: 16px;
+  padding: var(--space-3);
+  display: flex;
+  flex-direction: column;
+}
+
+.mobileLink {
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-size: 15px;
+  text-align: left;
+  padding: var(--space-3) var(--space-4);
+  border-radius: 10px;
+}
+
+.mobileLink:hover {
+  background: var(--bg-glass-hover);
+}
+
+@media (max-width: 720px) {
+  .linkList {
+    display: none;
+  }
+  .menuButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

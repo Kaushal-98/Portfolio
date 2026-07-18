@@ -1,0 +1,72 @@
+.wrapper {
+  padding: var(--space-8);
+  max-width: 520px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heading {
+  font-size: clamp(26px, 3vw, 34px);
+  color: var(--text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.subheading {
+  font-size: 14px;
+  margin-bottom: var(--space-6);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  text-align: left;
+  margin-bottom: var(--space-6);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.field label {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-tertiary);
+}
+
+.field input,
+.field textarea {
+  background: var(--bg-glass);
+  border: 1px solid var(--border-hairline);
+  border-radius: 10px;
+  padding: var(--space-3) var(--space-4);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 14px;
+  resize: vertical;
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--accent-violet);
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-6);
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+
+.socials a {
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+
+.socials a:hover {
+  color: var(--text-primary);
+}

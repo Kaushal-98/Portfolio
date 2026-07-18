@@ -1,0 +1,29 @@
+.section {
+  position: relative;
+  z-index: 10;
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-16);
+  scroll-margin-top: 96px;
+}
+
+.header {
+  max-width: 640px;
+  margin-bottom: var(--space-8);
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--accent-cyan);
+  margin-bottom: var(--space-2);
+}
+
+.title {
+  font-size: clamp(26px, 3.4vw, 38px);
+  color: var(--text-primary);
+}
+
+.panel {
+  border-radius: 20px;
+  overflow: hidden;
+}
