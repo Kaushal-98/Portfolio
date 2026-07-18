@@ -2,7 +2,7 @@
 
 An interactive developer portfolio built with React, TypeScript, and Framer Motion.
 
-**Live:** [your-vercel-link-here](https://portfolio-git-main-kaushal-sharma.vercel.app/)
+**Live:** [Check out](https://portfolio-kaushal-sharma.vercel.app/)
 
 ## Features
 - Smooth-scroll single-page layout with a sticky nav bar
